@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+}
+
+/* Header Styles */
+header {
+    background-color: #6b7c4f;; /* Darker olive green */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navbar Styles */
+#navbar {
+    margin: 20px 0;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar ul li {
+    display: inline; /* Horizontal navigation */
+    margin: 0 15px; /* Space between items */
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#navbar a:hover {
+    background-color: #596632; /* Slightly lighter olive for hover effect */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limit width for readability */
+    margin: 0 auto; /* Center the content */
+    background-color: white; /* White background for the main area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Page Styles */
+.page {
+    display: none; /* Hide all pages initially */
+}
+
+.page.active {
+    display: block; /* Show active page */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #6b7c4f;; /* Darker olive green */
+    color: white;
+    position: relative; /* Positioned relative to the main content */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Heading Styles */
+h1, h2 {
+    margin: 10px 0; /* Margin around headings */
+}
+
+li{
+    padding-top: 5px;
+}
+
+ul {
+    list-style-type: square; /* Removes default bullet points */
+    padding-left: 20px; /* Removes left padding */
+    padding-top: 10px;
+}
+
+.job-list{
+    padding-left: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #navbar ul li {
+        display: block; /* Stack navigation items on smaller screens */
+        margin: 10px 0;
+    }
+}
