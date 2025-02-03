@@ -1,50 +1,25 @@
-// // // script.js
-// // document.addEventListener("DOMContentLoaded", () => {
-// //     const pages = document.querySelectorAll(".page");
-// //     const links = document.querySelectorAll(".nav-link");
+// GSAP Scroll Animations
+gsap.registerPlugin(ScrollTrigger);
 
-// //     links.forEach(link => {
-// //         link.addEventListener("click", function(e) {
-// //             e.preventDefault(); // Prevent default link behavior
-// //             const targetId = this.getAttribute("data-target"); // Get the target page
+// Fade-in animations for home section
+gsap.from(".profile-pic", { duration: 1, opacity: 0, x: -50 });
+gsap.from(".home-text h1", { duration: 1, opacity: 0, x: 50 });
+gsap.from(".home-text p", { duration: 1, opacity: 0, x: 50, stagger: 0.3 });
 
-// //             // Fade out current content
-// //             gsap.to("#content", { opacity: 0, duration: 0.5, onComplete: () => {
-// //                 // Hide all pages
-// //                 pages.forEach(page => {
-// //                     page.style.display = "none"; // Hide all pages
-// //                 });
-                
-// //                 // Show the targeted page
-// //                 const targetPage = document.getElementById(targetId);
-// //                 targetPage.style.display = "block"; // Display the target page
+gsap.to(".skill-circle", {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".skills-container",
+        start: "top 80%",
+    }
+});
 
-// //                 // Fade in the target content
-// //                 gsap.fromTo("#content", { opacity: 0 }, { opacity: 1, duration: 0.5 });
-// //             }});
-// //         });
-// //     });
-// // });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const navLinks = document.querySelectorAll(".nav-link");
-//     const pages = document.querySelectorAll(".page");
-
-//     navLinks.forEach(link => {
-//         link.addEventListener("click", function (event) {
-//             event.preventDefault(); // Prevents page reload
-//             const target = link.getAttribute("data-target");
-
-//             // Hide all pages
-//             pages.forEach(page => {
-//                 page.style.display = "none";
-//                 page.classList.remove("active");
-//             });
-
-//             // Show the selected page
-//             const targetPage = document.getElementById(target);
-//             targetPage.style.display = "block";
-//             targetPage.classList.add("active");
-//         });
-//     });
-// });
+// Dark Mode Toggle
+const themeToggle = document.getElementById("theme-toggle");
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+});
