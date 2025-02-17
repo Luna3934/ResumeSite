@@ -1,16 +1,11 @@
 <urlset>
     <url>
-        <loc>https://marissathedeveloper.website/</loc>
+        <loc>https://marissathedeveloper.website</loc>
         <lastmod>2024-02-02</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://marissathedeveloper.website/about</loc>
-        <lastmod>2024-02-02</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://marissathedeveloper.website/projects</loc>
+        <loc>https://www.marissathedeveloper.website/#home</loc>
         <lastmod>2024-02-02</lastmod>
         <priority>0.8</priority>
     </url>
