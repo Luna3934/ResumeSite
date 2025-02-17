@@ -1,17 +1,17 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://https://marissathedeveloper.website/</loc>
-    <lastmod>2024-02-02</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://https://marissathedeveloper.website/about</loc>
-    <lastmod>2024-02-02</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://https://marissathedeveloper.website/projects</loc>
-    <lastmod>2024-02-02</lastmod>
-    <priority>0.8</priority>
-  </url>
+<urlset>
+    <url>
+        <loc>https://marissathedeveloper.website/</loc>
+        <lastmod>2024-02-02</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://marissathedeveloper.website/about</loc>
+        <lastmod>2024-02-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://marissathedeveloper.website/projects</loc>
+        <lastmod>2024-02-02</lastmod>
+        <priority>0.8</priority>
+    </url>
 </urlset>
