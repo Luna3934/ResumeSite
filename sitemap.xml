@@ -1,12 +1,8 @@
-<urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.marissathedeveloper/sitemap">
     <url>
         <loc>https://marissathedeveloper.website</loc>
         <lastmod>2024-02-02</lastmod>
         <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://www.marissathedeveloper.website/#home</loc>
-        <lastmod>2024-02-02</lastmod>
-        <priority>0.8</priority>
     </url>
 </urlset>
