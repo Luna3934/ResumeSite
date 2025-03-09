@@ -107,6 +107,7 @@ nav a:hover {
 
 /* Skills */
 #skills {
+    width: 100%;
     text-align: center;
     padding: 3rem 2rem;
     background: var(--primary-green); /* Olive green */
